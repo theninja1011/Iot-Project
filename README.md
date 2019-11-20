@@ -11,3 +11,8 @@ Stepper Motor Pi that activates upon receiving a query from the HUB.
 Cloud Server Pi that sends/receives information from HUB Pi and desplays them in a web client that can be accessed by user.
 
 # Getting Started
+## Setting Up Bluetooth on the HUB, Sensor Pi, and Stepper Motor Pi
+If you have a Raspberry Pi 3B or later, then you should have bluetooth installed, if you're having issues with getting bluetooth working or don't have bluetooth installed, follow this tutorial on getting started with BlueZ:
+https://3pl46c46ctx02p7rzdsvsg21-wpengine.netdna-ssl.com/wp-content/uploads/2019/03/1908_Tutorial-How-to-set-up-BlueZ__UpdateLFC_FINAL.pdf
+
+`sudo apt-get install bluetooth bluez-utils blueman` will also be a good start to what we're going to be using bluetooth for.
