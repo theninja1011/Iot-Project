@@ -18,3 +18,7 @@ The version that we are using is version 5.50 for this project. If you're having
 https://3pl46c46ctx02p7rzdsvsg21-wpengine.netdna-ssl.com/wp-content/uploads/2019/03/1908_Tutorial-How-to-set-up-BlueZ__UpdateLFC_FINAL.pdf
 
 `sudo apt-get install bluetooth bluez-utils blueman` will also be a good start to what we're going to be using bluetooth for.
+
+## Setting up Cloud4RPi on cloud and hub devices
+
+https://docs.cloud4rpi.io/start/rpi/
