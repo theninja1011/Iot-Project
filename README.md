@@ -30,3 +30,6 @@ We chose to write the socket connection in C. Originally we were writing it in p
 ## Setting up Cloud4RPi on cloud and hub devices
 
 https://docs.cloud4rpi.io/start/rpi/
+
+## Setting up Apache on cloud raspberry pi
+First things first, install apache `sudo apt install apache2`. After installing, you can check to see that it installed correctly by typing `http://localhost` in a web browser, it should bring up the default Apache2 Debian page. Once that it done you can go to the directory `cd /var/www/html` and typing in `ls -al` to see the programs in the folder as well as the read and write permissions. We had nginx installed as well when we got apache2, so we had to disable that by removing that from the folder and typing `service nginx stop` to stop the process from running. The reason we wanted nginx to stop is because both Apache2 and nginx were listening to port 80 and nginx would stop Apache2 from running.
