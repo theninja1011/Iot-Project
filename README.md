@@ -34,7 +34,7 @@ https://docs.cloud4rpi.io/start/rpi/
 ## Setting up Apache on cloud raspberry pi
 First things first, install apache `sudo apt install apache2 -y`. After installing, you can check to see that it installed correctly by typing `http://localhost` in a web browser, it should bring up the default Apache2 Debian page. Once that it done you can go to the directory `cd /var/www/html` and typing in `ls -al` to see the programs in the folder as well as the read and write permissions. We had nginx installed as well when we got apache2, so we had to disable that by removing that from the folder and typing `service nginx stop` to stop the process from running. The reason we wanted nginx to stop is because both Apache2 and nginx were listening to port 80 and nginx would stop Apache2 from running. Fuck nginx, I just did `sudo apt-get remove nginx` and now it's gone forever.
 After removing nginx, we installed php so we can have php in the code `sudo apt install php libapache2-mod-php -y`. After installing php, we changed the index.html file `sudo nano index.html` and put in some php code to test and it worked.
-Once we installed php, we installed mysql using mariadb which is associated with mysql. To install you type `sudo apt install mariadb-server`. After installing mariadb, we want phpmyadmin for easy creation of databases without the command line, so we move on to install PHPMyAdmin. You install PHPMyAdmin by typing `sudo apt install phpmyadmin`.
+Once we installed php, we installed mysql using mariadb which is associated with mysql. To install you type `sudo apt install mariadb-server`.
 
 
 # Resources
@@ -47,5 +47,3 @@ Cloud4RPi: https://docs.cloud4rpi.io/start/rpi/
 Apache/PHP: https://www.raspberrypi.org/documentation/remote-access/web-server/apache.md
 
 Mysql: https://pimylifeup.com/raspberry-pi-mysql/
-
-PHPMyAdmin: https://pimylifeup.com/raspberry-pi-phpmyadmin/
